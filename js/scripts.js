@@ -1,3 +1,24 @@
+//MUSTACHE 
+
+var templateSliderItem = document.getElementById('template-sliders-item').innerHTML;
+console.log(templateSliderItem);
+
+Mustache.parse(templateSliderItem);
+
+var sliderItems = '';
+
+for (var i=0; i<slidersData.length; i ++) {
+  sliderItems += Mustache.render(templateSliderItem, slidersData[i]);  
+}
+
+var result = document.querySelector('#result');
+
+result.insertAdjacentHTML('beforeend', sliderItems);
+
+
+
+
+
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
   // options

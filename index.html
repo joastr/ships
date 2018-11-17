@@ -23,11 +23,65 @@
         </div>
     </header>
     <main>
-            <div class="main-carousel">
-                    <div class="carousel-cell boat" style="background-image: url('../photo/boat.jpg'); background-size: cover; background-position: 50% 80%;" id="slide1">
+           
+        <script id="template-sliders-item" type="x-tmpl-mustache">
+                <div class="carousel-cell boat" style="background-image: url('{{{image}}}'); background-size: cover; background-position: 50% 80%;" id="slide1">
+                    <div class="container">
+                        <h1>{{title}}</h1>
+                        <h5>{{description}}</h5>
+                     </div>
+                </div> 
+        </script>
+
+        <script>
+            var slidersData = [
+                {
+                image: '../photo/boat.jpg',
+                title: '"Nasza wiedza jest małą wyspą na wielkim oceanie niewiedzy."',
+                description: ' - Isaac Bashevis Signer'
+                },
+                {
+                image: '../photo/boat-beach.jpg',
+                title: '„Nie zdajemy sobie sprawy z wartości wody, dopóki nie wyschnie studnia.”',
+                description: ' - Thomas Fuller'
+                },
+                {
+                image: '../photo/old-ship.jpg',
+                title: '„Morze, gdy raz rzuci urok, na zawsze utrzyma cię w swej sieci cudów.”',
+                description: ' – Jacques Yves Cousteau'
+                },
+                {
+                image: '../photo/sailing-boat.jpg',
+                title: '„Ocean porusza serce, inspiruje wyobraźnię i obdarza duszę wiekuistą radością.”',
+                description: ' - Wyland'
+                },
+                {
+                image: '../photo/ship.jpg',
+                title: '„Ryby żyją w morzu, tak jak ludzie na lądzie; wielcy pożerają małych.”',
+                description: ' - Wiliam Shakespeare'
+                },
+                {
+                image: '../photo/sunset.jpg',
+                title: '„Morze da każdemu nową nadzieję, a sen przywoła obraz domu.”',
+                description: ' - Krzysztof Kolumb'
+                },
+                {
+                image: '../photo/two-boats.jpg',
+                title: '„Morskie fale pozwalają mi odnaleźć siebie.”',
+                description: ' - Gill Davis'
+                }
+            ] 
+        
+        
+        </script> 
+
+
+            <div class="main-carousel" id="result">
+             
+             <!----       <div class="carousel-cell boat" style="background-image: url('../photo/boat.jpg'); background-size: cover; background-position: 50% 80%;" id="slide1">
                         <div class="container">
                             <h1>„Nasza wiedza jest małą wyspą na wielkim oceanie niewiedzy.”</h1>
-                            <h5> - Isaac Bashevis Signer</h5>
+                            <h5>- Isaac Bashevis Signer</h5>
                          </div>
                     </div>
                     <div class="carousel-cell boat-beach" style="background-image: url('../photo/boat-beach.jpg'); background-size: cover; background-position: 50% 80%;" id="slide2"> 
@@ -68,14 +122,15 @@
                             <h1>„Morskie fale pozwalają mi odnaleźć siebie.”</h1>
                             <h5>- Gill Davis</h5>
                          </div>
-                    </div>
-            
+                    </div>-->
             </div>
             <div class="progress-bar"></div>
+            <button class='reset'>reset</button>
     </main>
     <footer>
     </footer>  
     <script src="vendor/flickity.pkgd.min.js"></script>
+    <script src="vendor/mustache.js"></script>
     <script src="js/scripts.js"></script>    
 </body>
 </html>

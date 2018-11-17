@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC:400,400i,700,700i,900,900i&subset=latin-ext");
-.ship, .boat, .two-boats, .sunset, .sailing-boat, .old-ship, .boat-beach {
-  background-size: cover !important;
-  background-position: 50% 80% !important;
-}
-
 h1 {
   font-family: "Playfair Display SC", serif;
   font-weight: 400;
@@ -53,34 +48,42 @@ h1 {
   padding-bottom: 20px;
 }
 
+/*
 .ship {
-  background: url("../photo/ship.jpg");
+    @extend %background;
+    background: url('../photo/ship.jpg');
 }
 
 .boat {
-  background: url("../photo/boat.jpg");
+    @extend %background;
+    background: url('../photo/boat.jpg');
 }
 
 .two-boats {
-  background: url("../photo/two-boats.jpg");
+    @extend %background;
+    background: url('../photo/two-boats.jpg');
 }
 
 .sunset {
-  background: url("../photo/sunset.jpg");
+    @extend %background;
+    background: url('../photo/sunset.jpg');
 }
 
 .sailing-boat {
-  background: url("../photo/sailing-boat.jpg");
+    @extend %background;
+    background: url('../photo/sailing-boat.jpg');
 }
 
 .old-ship {
-  background: url("../photo/old-ship.jpg");
+    @extend %background;
+    background: url('../photo/old-ship.jpg');
 }
 
 .boat-beach {
-  background: url("../photo/boat-beach.jpg");
+    @extend %background;
+    background: url('../photo/boat-beach.jpg');
 }
-
+*/
 .progress-bar {
   height: 15px;
   width: 0;
@@ -96,5 +99,8 @@ h1 {
   height: 40px;
   font-size: 0.7em;
   margin: 15px;
+  position: absolute;
+  top: 30%;
+  right: 1%;
 }
 /*# sourceMappingURL=style.css.map */
