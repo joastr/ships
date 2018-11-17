@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC:400,400i,700,700i,900,900i&subset=latin-ext');
+
+$quote-color: white;
+$h-font: 'Playfair Display SC', serif;
+$font: "Open Sans", sans-serif;
+$slide-nav: #25283D;
+
+
+
+%background {
+    background-size: cover !important;
+    background-position: 50% 80% !important;
+}
+
+
+h1 {
+    font-family: $h-font;
+    font-weight: 400;
+    font-size: 3em;
+    text-align: center;
+}
+
+.slide-nav {
+    background: $slide-nav;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    a {
+        color: $quote-color;
+        text-decoration: none;
+        padding: 0 20px;
+        
+    }
+}
+
+.carousel-cell  {
+    width: 100vw; /* full width */
+    min-height: 250px; /* height of carousel */
+    height: 50vh;
+    margin-right: 5px;
+  }
+
+.container{
+    width: 1200px;
+    margin: 30px auto;
+    background: rgba(0,0,0,0.3);
+    h1 {
+        color: $quote-color;
+    }
+    h5 {
+        color: $quote-color;
+        text-align: right;
+        font-size: 1.5em;
+        font-weight: 100;
+        padding-right: 30px;
+        margin-bottom: 0;
+        padding-bottom: 20px;
+    }
+} 
+/*
+.ship {
+    @extend %background;
+    background: url('../photo/ship.jpg');
+}
+
+.boat {
+    @extend %background;
+    background: url('../photo/boat.jpg');
+}
+
+.two-boats {
+    @extend %background;
+    background: url('../photo/two-boats.jpg');
+}
+
+.sunset {
+    @extend %background;
+    background: url('../photo/sunset.jpg');
+}
+
+.sailing-boat {
+    @extend %background;
+    background: url('../photo/sailing-boat.jpg');
+}
+
+.old-ship {
+    @extend %background;
+    background: url('../photo/old-ship.jpg');
+}
+
+.boat-beach {
+    @extend %background;
+    background: url('../photo/boat-beach.jpg');
+}
+
+.progress-bar {
+    height: 15px;
+    width: 0;
+    background: $slide-nav;
+}
+
+.reset {
+    background: #25283D;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    font-size: 0.7em;
+    margin: 15px;
+}
+
+*/

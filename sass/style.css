@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC:400,400i,700,700i,900,900i&subset=latin-ext");
+.ship, .boat, .two-boats, .sunset, .sailing-boat, .old-ship, .boat-beach {
+  background-size: cover !important;
+  background-position: 50% 80% !important;
+}
+
+h1 {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-size: 3em;
+  text-align: center;
+}
+
+.slide-nav {
+  background: #25283D;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.slide-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.carousel-cell {
+  width: 100vw;
+  /* full width */
+  min-height: 250px;
+  /* height of carousel */
+  height: 50vh;
+  margin-right: 5px;
+}
+
+.container {
+  width: 1200px;
+  margin: 30px auto;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.container h1 {
+  color: white;
+}
+
+.container h5 {
+  color: white;
+  text-align: right;
+  font-size: 1.5em;
+  font-weight: 100;
+  padding-right: 30px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+.ship {
+  background: url("../photo/ship.jpg");
+}
+
+.boat {
+  background: url("../photo/boat.jpg");
+}
+
+.two-boats {
+  background: url("../photo/two-boats.jpg");
+}
+
+.sunset {
+  background: url("../photo/sunset.jpg");
+}
+
+.sailing-boat {
+  background: url("../photo/sailing-boat.jpg");
+}
+
+.old-ship {
+  background: url("../photo/old-ship.jpg");
+}
+
+.boat-beach {
+  background: url("../photo/boat-beach.jpg");
+}
+
+.progress-bar {
+  height: 15px;
+  width: 0;
+  background: #25283D;
+}
+
+.reset {
+  background: #25283D;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 50%;
+  border: none;
+  height: 40px;
+  font-size: 0.7em;
+  margin: 15px;
+}
+/*# sourceMappingURL=style.css.map */
