@@ -92,6 +92,7 @@ h1 {
     @extend %background;
     background: url('../photo/boat-beach.jpg');
 }
+*/
 
 .progress-bar {
     height: 15px;
@@ -108,6 +109,8 @@ h1 {
     height: 40px;
     font-size: 0.7em;
     margin: 15px;
+    position: absolute;
+    top: 30%;
+    right: 1%;
 }
 
-*/
