@@ -63,9 +63,7 @@ flkty.on( 'scroll', function( progress ) {
 			  center: markerLocation
 		    });
 			
-		
-		//document.querySelectorAll('carousel-cell').addEventListener('click', function(event){
-    //  event.preventDefault();
+
       
         for(var i = 0; i < slidersData.length; i++) {
           slidersMarkerLocation = slidersData[i].coords;
