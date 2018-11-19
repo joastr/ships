@@ -38,37 +38,44 @@
                 {
                 image: '../photo/boat.jpg',
                 title: '"Nasza wiedza jest małą wyspą na wielkim oceanie niewiedzy."',
-                description: ' - Isaac Bashevis Signer'
+                description: ' - Isaac Bashevis Signer',
+                coords: {lat: 19.785430, lng: -70.692291}
                 },
                 {
                 image: '../photo/boat-beach.jpg',
                 title: '„Nie zdajemy sobie sprawy z wartości wody, dopóki nie wyschnie studnia.”',
-                description: ' - Thomas Fuller'
+                description: ' - Thomas Fuller',
+                coords: {lat: 16.596909, lng: -22.907631}
                 },
                 {
                 image: '../photo/old-ship.jpg',
                 title: '„Morze, gdy raz rzuci urok, na zawsze utrzyma cię w swej sieci cudów.”',
-                description: ' – Jacques Yves Cousteau'
+                description: ' – Jacques Yves Cousteau',
+                coords: {lat: 17.088617, lng: 122.684693},
                 },
                 {
                 image: '../photo/sailing-boat.jpg',
                 title: '„Ocean porusza serce, inspiruje wyobraźnię i obdarza duszę wiekuistą radością.”',
-                description: ' - Wyland'
+                description: ' - Wyland',
+                coords: {lat: -21.578534, lng: 55.545926}
                 },
                 {
                 image: '../photo/ship.jpg',
                 title: '„Ryby żyją w morzu, tak jak ludzie na lądzie; wielcy pożerają małych.”',
-                description: ' - Wiliam Shakespeare'
+                description: ' - Wiliam Shakespeare',
+                coords: {lat: 20.725372, lng: 38.526441}
                 },
                 {
                 image: '../photo/sunset.jpg',
                 title: '„Morze da każdemu nową nadzieję, a sen przywoła obraz domu.”',
-                description: ' - Krzysztof Kolumb'
+                description: ' - Krzysztof Kolumb',
+                coords: {lat: 0.332504, lng: -38.526441}
                 },
                 {
                 image: '../photo/two-boats.jpg',
                 title: '„Morskie fale pozwalają mi odnaleźć siebie.”',
-                description: ' - Gill Davis'
+                description: ' - Gill Davis',
+                coords: {lat: -16.506395, lng: -151.751696}
                 }
             ] 
         
@@ -77,60 +84,16 @@
 
 
             <div class="main-carousel" id="result">
-             
-             <!----       <div class="carousel-cell boat" style="background-image: url('../photo/boat.jpg'); background-size: cover; background-position: 50% 80%;" id="slide1">
-                        <div class="container">
-                            <h1>„Nasza wiedza jest małą wyspą na wielkim oceanie niewiedzy.”</h1>
-                            <h5>- Isaac Bashevis Signer</h5>
-                         </div>
-                    </div>
-                    <div class="carousel-cell boat-beach" style="background-image: url('../photo/boat-beach.jpg'); background-size: cover; background-position: 50% 80%;" id="slide2"> 
-                        <div class="container">
-                            <h1>„Nie zdajemy sobie sprawy z wartości wody, dopóki nie wyschnie studnia.”</h1>
-                            <h5>– Thomas Fuller</h5>
-                         </div>
-                    </div>
-                    <div class="carousel-cell old-ship" style="background-image: url('../photo/old-ship.jpg'); background-size: cover; background-position: 50% 80%;" id="slide3">  
-                        <div class="container">
-                            <h1>„Morze, gdy raz rzuci urok, na zawsze utrzyma cię w swej sieci cudów.” </h1>
-                            <h5>– Jacques Yves Cousteau</h5>
-                         </div>
-                    </div>
-                    <div class="carousel-cell sailing-boat" style="background-image: url('../photo/sailing-boat.jpg'); background-size: cover; background-position: 50% 80%;" id="slide4">
-                        <div class="container">
-                            <h1>„Ocean porusza serce, inspiruje wyobraźnię i obdarza duszę wiekuistą radością.”</h1>
-                            <h5>- Wyland</h5>
-                         </div>
-                    </div>
-                    <div class="carousel-cell ship" style="background-image: url('../photo/ship.jpg'); background-size: cover; background-position: 50% 80%;" id="slide5">
-                        <div class="container">
-                            <h1>„Ryby żyją w morzu, tak jak ludzie na lądzie; wielcy pożerają małych.”</h1>
-                            <h5>- Wiliam Shakespeare</h5>
-                         </div>
-                    </div>
-                   
-                    <div class="carousel-cell sunset" style="background-image: url('../photo/sunset.jpg'); background-size: cover; background-position: 50% 80%;" id="slide6">
-                        <div class="container">
-                            <h1>„Morze da każdemu nową nadzieję, a sen przywoła obraz domu.” </h1>
-                            <h5>- Krzysztof Kolumb</h5>
-                         </div>
-                    </div>  
-                                      
-                    <div class="carousel-cell two-boats" style="background-image: url('../photo/two-boats.jpg'); background-size: cover; background-position: 50% 80%;" id="slide7">
-                        <button class='reset'>reset</button>
-                        <div class="container">
-                            <h1>„Morskie fale pozwalają mi odnaleźć siebie.”</h1>
-                            <h5>- Gill Davis</h5>
-                         </div>
-                    </div>-->
             </div>
             <div class="progress-bar"></div>
             <button class='reset'>reset</button>
+            <div id="map"></div>
     </main>
     <footer>
     </footer>  
     <script src="vendor/flickity.pkgd.min.js"></script>
     <script src="vendor/mustache.js"></script>
-    <script src="js/scripts.js"></script>    
+    <script src="js/scripts.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIqcl5IlTB8WZN1JHC-mEvlMUl00S_fpY&callback=initMap"></script>        
 </body>
 </html>

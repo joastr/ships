@@ -48,3 +48,33 @@ flkty.on( 'scroll', function( progress ) {
   progress = Math.max( 0, Math.min( 1, progress ) );
   progressBar.style.width = progress * 100 + '%';
 });
+
+// INIT MAP 
+
+(function(){ 
+	
+  	window.initMap = function() {
+    var marker= [];
+    var markerLocation = slidersData[0].coords; 
+	
+		
+		    var map = new google.maps.Map(document.getElementById('map'), {
+		  	zoom: 7,
+			  center: markerLocation
+		    });
+			
+		
+		//document.querySelectorAll('carousel-cell').addEventListener('click', function(event){
+    //  event.preventDefault();
+      
+        for(var i = 0; i < slidersData.length; i++) {
+          slidersMarkerLocation = slidersData[i].coords;
+          console.log('marker', slidersMarkerLocation);
+          marker[i] = new google.maps.Marker({position: slidersMarkerLocation, map: map});  
+
+          
+        }
+
+    };
+});	
+		
