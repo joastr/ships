@@ -25,6 +25,8 @@ h1 {
     height: 50px;
     line-height: 50px;
     text-align: center;
+    //display:flex;
+    //flex-wrap: wrap;
     a {
         color: $quote-color;
         text-decoration: none;
@@ -40,7 +42,7 @@ h1 {
     margin-right: 5px;
   }
 
-.container{
+.container1{
     max-width: 1200px;
     width: 100%;
     margin: 30px auto;
@@ -112,11 +114,16 @@ h1 {
     font-family: "Open Sans", sans-serif;
     border-radius: 50%;
     border: none;
-    height: 40px;
-    font-size: 0.7em;
-    margin: 15px;
+    height: 44px;
+    font-size: 1em;
+    //margin: 15px;
     position: absolute;
-    top: 30%;
+    top: 11%;
     right: 1%;
 }
 
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.4em;   
+    }
+}

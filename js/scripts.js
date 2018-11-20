@@ -16,7 +16,7 @@ var result = document.querySelector('#result');
 result.insertAdjacentHTML('beforeend', sliderItems);
 
 
-
+//FLICKITY CAROUSEL
 
 
 var elem = document.querySelector('.main-carousel');
@@ -50,29 +50,20 @@ flkty.on( 'scroll', function( progress ) {
 });
 
 // INIT MAP 
-
-(function(){ 
 	
   	window.initMap = function() {
-    var marker= [];
-    var markerLocation = slidersData[0].coords; 
-	
-		
-		    var map = new google.maps.Map(document.getElementById('map'), {
+      var marker= [];
+      var markerLocation = slidersData[0].coords; 
+		  var map = new google.maps.Map(document.getElementById('map'), {
 		  	zoom: 7,
 			  center: markerLocation
-		    });
-			
-
-      
-        for(var i = 0; i < slidersData.length; i++) {
-          slidersMarkerLocation = slidersData[i].coords;
-          console.log('marker', slidersMarkerLocation);
-          marker[i] = new google.maps.Marker({position: slidersMarkerLocation, map: map});  
-
-          
+		  });
+			  
+      for(var i = 0; i < slidersData.length; i++) {
+        slidersMarkerLocation = slidersData[i].coords;
+        console.log('marker', slidersMarkerLocation);
+        marker[i] = new google.maps.Marker({position: slidersMarkerLocation, map: map});      
         }
-
     };
-});	
+
 		

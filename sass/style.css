@@ -28,18 +28,18 @@ h1 {
   margin-right: 5px;
 }
 
-.container {
+.container1 {
   max-width: 1200px;
   width: 100%;
   margin: 30px auto;
   background: rgba(0, 0, 0, 0.3);
 }
 
-.container h1 {
+.container1 h1 {
   color: white;
 }
 
-.container h5 {
+.container1 h5 {
   color: white;
   text-align: right;
   font-size: 1.5em;
@@ -102,11 +102,16 @@ h1 {
   font-family: "Open Sans", sans-serif;
   border-radius: 50%;
   border: none;
-  height: 40px;
-  font-size: 0.7em;
-  margin: 15px;
+  height: 44px;
+  font-size: 1em;
   position: absolute;
-  top: 30%;
+  top: 11%;
   right: 1%;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.4em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
