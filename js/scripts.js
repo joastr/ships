@@ -62,8 +62,25 @@ flkty.on( 'scroll', function( progress ) {
       for(var i = 0; i < slidersData.length; i++) {
         slidersMarkerLocation = slidersData[i].coords;
         console.log('marker', slidersMarkerLocation);
-        marker[i] = new google.maps.Marker({position: slidersMarkerLocation, map: map});      
-        }
-    };
+        marker[i] = new google.maps.Marker({position: slidersMarkerLocation, map: map});  
+        addMarkerToSlider(marker[i],i);     
+      }
+      
+      function addMarkerToSlider(marker, index) {
+        marker.addListener('click', function(){
+          console.log('pokaż index', index);
+          flkty.select(index);
+        } );
+
+      }
+
+      flkty.on( 'change', function( index ) {
+        console.log('Flickity change ' + slidersData[index].coords );
+        map.panTo(slidersData[index].coords);
+        map.setZoom(2); 
+      });
+      };
+
+    
 
 		
