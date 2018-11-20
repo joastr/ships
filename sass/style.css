@@ -29,7 +29,8 @@ h1 {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 30px auto;
   background: rgba(0, 0, 0, 0.3);
 }
@@ -48,42 +49,6 @@ h1 {
   padding-bottom: 20px;
 }
 
-/*
-.ship {
-    @extend %background;
-    background: url('../photo/ship.jpg');
-}
-
-.boat {
-    @extend %background;
-    background: url('../photo/boat.jpg');
-}
-
-.two-boats {
-    @extend %background;
-    background: url('../photo/two-boats.jpg');
-}
-
-.sunset {
-    @extend %background;
-    background: url('../photo/sunset.jpg');
-}
-
-.sailing-boat {
-    @extend %background;
-    background: url('../photo/sailing-boat.jpg');
-}
-
-.old-ship {
-    @extend %background;
-    background: url('../photo/old-ship.jpg');
-}
-
-.boat-beach {
-    @extend %background;
-    background: url('../photo/boat-beach.jpg');
-}
-*/
 .progress-bar {
   height: 15px;
   width: 0;
@@ -96,11 +61,23 @@ h1 {
   font-family: "Open Sans", sans-serif;
   border-radius: 50%;
   border: none;
-  height: 40px;
-  font-size: 0.7em;
-  margin: 15px;
+  height: 44px;
+  font-size: 1em;
   position: absolute;
-  top: 30%;
+  top: 15%;
   right: 1%;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.4em;
+  }
+  h5 {
+    font-size: 1em !important;
+  }
+  .slide-nav a {
+    padding: 0 6px;
+    font-size: 0.8em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
